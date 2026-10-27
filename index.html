@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d6604b2fcf938c1d61d92a942daa891 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8d6604b2fcf938c1d61d92a942daa891" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8d6604b2fcf938c1d61d92a942daa891 = L.map(
+                "map_8d6604b2fcf938c1d61d92a942daa891",
+                {
+                    center: [47.74445438333333, 16.067903153333333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_8d6604b2fcf938c1d61d92a942daa891);
+
+            
+
+        
+    
+            var tile_layer_33584d6b6876dbeba2415374c2b61ee2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_33584d6b6876dbeba2415374c2b61ee2.addTo(map_8d6604b2fcf938c1d61d92a942daa891);
+        
+    
+            var marker_cluster_fde6fb9ecb1a6b127449e784def06f76 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_7a0faf290796bdc9a14e925100dad355 = L.marker(
+                [47.8013645, 16.2227075],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_7922757969dde083d30fae19c503f0c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09bd37963d9c5f8e9eff0531199a9559 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_f23aba05ab1e3a2091a1623031fe0fb4 = $(`<div id="html_f23aba05ab1e3a2091a1623031fe0fb4" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Großes Grundstück im Zentrum von Wiener Neustadt</b><br>2700 Wiener Neustadt<br>€ 1.000.000 · 2400.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt/grosses-grundstueck-im-zentrum-von-wiener-neustadt-1300027818/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_09bd37963d9c5f8e9eff0531199a9559.setContent(html_f23aba05ab1e3a2091a1623031fe0fb4);
+            
+        
+
+        marker_7a0faf290796bdc9a14e925100dad355.bindPopup(popup_09bd37963d9c5f8e9eff0531199a9559)
+        ;
+
+        
+    
+    
+            marker_7a0faf290796bdc9a14e925100dad355.bindTooltip(
+                `<div>
+                     Großes Grundstück im Zentrum von Wiener Neustadt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a0faf290796bdc9a14e925100dad355.setIcon(icon_7922757969dde083d30fae19c503f0c2);
+            
+    
+            var marker_9285f8ae4c6983be35d122ff64f2a5a8 = L.marker(
+                [47.7849541, 16.0404663],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_c538d8991f9183d0d2da66dc6fd0584a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be8c88297309e13fec4323e9d615800a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_be248329bd9559631bdfc48470f0a2f1 = $(`<div id="html_be248329bd9559631bdfc48470f0a2f1" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Obst- und Gemüsegarten ideal für Mikrofarming</b><br>2732 Willendorf<br>€ 15.600 · 800.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/obst-und-gemuesegarten-ideal-fuer-mikrofarming-1634267193/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_be8c88297309e13fec4323e9d615800a.setContent(html_be248329bd9559631bdfc48470f0a2f1);
+            
+        
+
+        marker_9285f8ae4c6983be35d122ff64f2a5a8.bindPopup(popup_be8c88297309e13fec4323e9d615800a)
+        ;
+
+        
+    
+    
+            marker_9285f8ae4c6983be35d122ff64f2a5a8.bindTooltip(
+                `<div>
+                     Obst- und Gemüsegarten ideal für Mikrofarming
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9285f8ae4c6983be35d122ff64f2a5a8.setIcon(icon_c538d8991f9183d0d2da66dc6fd0584a);
+            
+    
+            var marker_cbb224b565afe790fec7c45496e090a0 = L.marker(
+                [48.3264212, 16.7062042],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_5a14958bdb14b98ec103cdb43fb15291 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03edc711b933f3c676c50d3345dc8876 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_ced6db19b5d77e9a77578b334d777f8b = $(`<div id="html_ced6db19b5d77e9a77578b334d777f8b" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Provisionsfreie Baugrundstücke in sonniger Ruhelage zu verkaufen!</b><br>2230 Gänserndorf<br>€ 197.500 · 806.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/gaenserndorf/provisionsfreie-baugrundstuecke-in-sonniger-ruhelage-zu-verkaufen-1586549771/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_03edc711b933f3c676c50d3345dc8876.setContent(html_ced6db19b5d77e9a77578b334d777f8b);
+            
+        
+
+        marker_cbb224b565afe790fec7c45496e090a0.bindPopup(popup_03edc711b933f3c676c50d3345dc8876)
+        ;
+
+        
+    
+    
+            marker_cbb224b565afe790fec7c45496e090a0.bindTooltip(
+                `<div>
+                     Provisionsfreie Baugrundstücke in sonniger Ruhelage zu verkaufen!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbb224b565afe790fec7c45496e090a0.setIcon(icon_5a14958bdb14b98ec103cdb43fb15291);
+            
+    
+            var marker_6d410f9c475138466f3a2e25a8dc300a = L.marker(
+                [47.5521095, 16.0916025],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_188bb3bb62daa2561e9f4c63268cdbff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3702238e39ba42aef6f18c7f7c7fe24c = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_fcdb0d9e717a3718663a2e7a71b91387 = $(`<div id="html_fcdb0d9e717a3718663a2e7a71b91387" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ihr Eigenheim wartet!</b><br>2870 Aspang Markt<br>€ 57 · 1042.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ihr-eigenheim-wartet-1518317985/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_3702238e39ba42aef6f18c7f7c7fe24c.setContent(html_fcdb0d9e717a3718663a2e7a71b91387);
+            
+        
+
+        marker_6d410f9c475138466f3a2e25a8dc300a.bindPopup(popup_3702238e39ba42aef6f18c7f7c7fe24c)
+        ;
+
+        
+    
+    
+            marker_6d410f9c475138466f3a2e25a8dc300a.bindTooltip(
+                `<div>
+                     Ihr Eigenheim wartet!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d410f9c475138466f3a2e25a8dc300a.setIcon(icon_188bb3bb62daa2561e9f4c63268cdbff);
+            
+    
+            var marker_10a9bb63f77017705361f2939c5d62d2 = L.marker(
+                [47.5133791, 16.2819499],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_0ebd2f8b737656fc6d285ba35c538205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_084756d4a548640279afea56c3857a83 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_febed37d597c15736bc4d42b67011142 = $(`<div id="html_febed37d597c15736bc4d42b67011142" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Bauland in der Buckligen Welt - naturnahe Ruhe bei optimaler Infrastruktur</b><br>2860 Kirchschlag in der Buckligen Welt<br>€ 54 · 1267.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/bauland-in-der-buckligen-welt-naturnahe-ruhe-bei-optimaler-infrastruktur-1613762103/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_084756d4a548640279afea56c3857a83.setContent(html_febed37d597c15736bc4d42b67011142);
+            
+        
+
+        marker_10a9bb63f77017705361f2939c5d62d2.bindPopup(popup_084756d4a548640279afea56c3857a83)
+        ;
+
+        
+    
+    
+            marker_10a9bb63f77017705361f2939c5d62d2.bindTooltip(
+                `<div>
+                     Bauland in der Buckligen Welt - naturnahe Ruhe bei optimaler Infrastruktur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10a9bb63f77017705361f2939c5d62d2.setIcon(icon_0ebd2f8b737656fc6d285ba35c538205);
+            
+    
+            var marker_032221adad1b1f42537bd10460bdd05e = L.marker(
+                [47.5870539, 16.008036],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_63ca8996400e7833e8910a0ef21e5156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbb7f9966aca4f9cf9e6af3242225d54 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_f8c1b4f3218c7fd48a473c635b6a148e = $(`<div id="html_f8c1b4f3218c7fd48a473c635b6a148e" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Grundstück zu verkaufen</b><br>2880 St. Corona am Wechsel<br>€ 70 · 1087.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/grundstueck-zu-verkaufen-2032468157/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_dbb7f9966aca4f9cf9e6af3242225d54.setContent(html_f8c1b4f3218c7fd48a473c635b6a148e);
+            
+        
+
+        marker_032221adad1b1f42537bd10460bdd05e.bindPopup(popup_dbb7f9966aca4f9cf9e6af3242225d54)
+        ;
+
+        
+    
+    
+            marker_032221adad1b1f42537bd10460bdd05e.bindTooltip(
+                `<div>
+                     Grundstück zu verkaufen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_032221adad1b1f42537bd10460bdd05e.setIcon(icon_63ca8996400e7833e8910a0ef21e5156);
+            
+    
+            var marker_e8de40689bf0c5f5fc4f46b3913556a7 = L.marker(
+                [47.5517562, 16.0307929],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_b0610071ed994f3c731519e2c269131a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a6aa110cb74c611d2bf0b36cd487514 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_57ce3429fabceffd3a4c621047e6046e = $(`<div id="html_57ce3429fabceffd3a4c621047e6046e" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Leben am Sonnenhang</b><br>2870 Aspangberg-St. Peter<br>€ 42 · 2342.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/leben-am-sonnenhang-1690936411/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_7a6aa110cb74c611d2bf0b36cd487514.setContent(html_57ce3429fabceffd3a4c621047e6046e);
+            
+        
+
+        marker_e8de40689bf0c5f5fc4f46b3913556a7.bindPopup(popup_7a6aa110cb74c611d2bf0b36cd487514)
+        ;
+
+        
+    
+    
+            marker_e8de40689bf0c5f5fc4f46b3913556a7.bindTooltip(
+                `<div>
+                     Leben am Sonnenhang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8de40689bf0c5f5fc4f46b3913556a7.setIcon(icon_b0610071ed994f3c731519e2c269131a);
+            
+    
+            var marker_66250f8cf79f2db0c60b523647726754 = L.marker(
+                [47.5828951, 16.1521403],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_6472100d7b0c6751fe6b3f82033b7687 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b129bfe5f236b7d8a5fb3b1d093fa391 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_9e4dc83f046636b3d75eee6e51b9365c = $(`<div id="html_9e4dc83f046636b3d75eee6e51b9365c" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrundstück in Edlitz - Voll aufgeschlossen, kein Bauzwang!</b><br>2842 Edlitz<br>€ 84 · 1252.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/baugrundstueck-in-edlitz-voll-aufgeschlossen-kein-bauzwang-1310671105/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_b129bfe5f236b7d8a5fb3b1d093fa391.setContent(html_9e4dc83f046636b3d75eee6e51b9365c);
+            
+        
+
+        marker_66250f8cf79f2db0c60b523647726754.bindPopup(popup_b129bfe5f236b7d8a5fb3b1d093fa391)
+        ;
+
+        
+    
+    
+            marker_66250f8cf79f2db0c60b523647726754.bindTooltip(
+                `<div>
+                     Baugrundstück in Edlitz - Voll aufgeschlossen, kein Bauzwang!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66250f8cf79f2db0c60b523647726754.setIcon(icon_6472100d7b0c6751fe6b3f82033b7687);
+            
+    
+            var marker_d2c2d0bb152551d564e4560485f686f0 = L.marker(
+                [47.6419448, 15.8227876],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_8f4fac872c03efdd3bacac1291fd288e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_392db270dec161e4d9abcbffb403872c = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_531257898ddf143243c8b65e66ed7485 = $(`<div id="html_531257898ddf143243c8b65e66ed7485" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ihr Grundstück in Hanglage mit absolutem Grünblick</b><br>2680 Semmering-Kurort<br>€ 63 · 1719.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ihr-grundstueck-in-hanglage-mit-absolutem-gruenblick-1765532594/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_392db270dec161e4d9abcbffb403872c.setContent(html_531257898ddf143243c8b65e66ed7485);
+            
+        
+
+        marker_d2c2d0bb152551d564e4560485f686f0.bindPopup(popup_392db270dec161e4d9abcbffb403872c)
+        ;
+
+        
+    
+    
+            marker_d2c2d0bb152551d564e4560485f686f0.bindTooltip(
+                `<div>
+                     Ihr Grundstück in Hanglage mit absolutem Grünblick
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2c2d0bb152551d564e4560485f686f0.setIcon(icon_8f4fac872c03efdd3bacac1291fd288e);
+            
+    
+            var marker_51fa830130636ccb02161a69d372e6e9 = L.marker(
+                [47.7710398, 16.0394426],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_ad6667bdb1751ec0c4b3c0eab162d7fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a679000a5ed23e3a0a85fd6883e51c5 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_360422b1e38875ef7aca6865dec831de = $(`<div id="html_360422b1e38875ef7aca6865dec831de" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ruhe, Natur &amp; Weitblick - Exklusives Grundstück in begehrter Wohnlage</b><br>2732 Würflach<br>€ 115 · 1001.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ruhe-natur-weitblick-exklusives-grundstueck-in-begehrter-wohnlage-1479894519/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_7a679000a5ed23e3a0a85fd6883e51c5.setContent(html_360422b1e38875ef7aca6865dec831de);
+            
+        
+
+        marker_51fa830130636ccb02161a69d372e6e9.bindPopup(popup_7a679000a5ed23e3a0a85fd6883e51c5)
+        ;
+
+        
+    
+    
+            marker_51fa830130636ccb02161a69d372e6e9.bindTooltip(
+                `<div>
+                     Ruhe, Natur & Weitblick - Exklusives Grundstück in begehrter Wohnlage
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51fa830130636ccb02161a69d372e6e9.setIcon(icon_ad6667bdb1751ec0c4b3c0eab162d7fe);
+            
+    
+            var marker_2b639d16a74c36bcb0125270849fb78c = L.marker(
+                [47.6539399, 15.7888896],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_807a249756245a53391b7c2ae6d6dbdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bac81b4d5d96987b1f2917286ddfe0a = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_96f2d148f98ccd01f93d4fa3d9abb010 = $(`<div id="html_96f2d148f98ccd01f93d4fa3d9abb010" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrundstück im Luftkurort Breitenstein am Semmering</b><br>2673 Breitenstein<br>€ 100 · 1175.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/baugrundstueck-im-luftkurort-breitenstein-am-semmering-1846601172/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_3bac81b4d5d96987b1f2917286ddfe0a.setContent(html_96f2d148f98ccd01f93d4fa3d9abb010);
+            
+        
+
+        marker_2b639d16a74c36bcb0125270849fb78c.bindPopup(popup_3bac81b4d5d96987b1f2917286ddfe0a)
+        ;
+
+        
+    
+    
+            marker_2b639d16a74c36bcb0125270849fb78c.bindTooltip(
+                `<div>
+                     Baugrundstück im Luftkurort Breitenstein am Semmering
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b639d16a74c36bcb0125270849fb78c.setIcon(icon_807a249756245a53391b7c2ae6d6dbdb);
+            
+    
+            var marker_8fd6bb119f26fbbb85663e9e549c8192 = L.marker(
+                [48.2666393, 15.8691231],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_888d5fa04d5bfd75413220ce2219fb16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_520002fe1363144986f2f31af74a0bea = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_78f9fcee5e5b1df890c7db45c91ab71b = $(`<div id="html_78f9fcee5e5b1df890c7db45c91ab71b" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>SELTENE GELEGENHEIT - 890 m² Grundstücksanteil in absoluter Grün- und Ruhelage in GRU</b><br>2392 Grub<br>€ 67 · 890.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/moedling/seltene-gelegenheit-890-m-grundstuecksanteil-in-absoluter-gruen-und-ruhelage-in-gru-2066852916/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_520002fe1363144986f2f31af74a0bea.setContent(html_78f9fcee5e5b1df890c7db45c91ab71b);
+            
+        
+
+        marker_8fd6bb119f26fbbb85663e9e549c8192.bindPopup(popup_520002fe1363144986f2f31af74a0bea)
+        ;
+
+        
+    
+    
+            marker_8fd6bb119f26fbbb85663e9e549c8192.bindTooltip(
+                `<div>
+                     SELTENE GELEGENHEIT - 890 m² Grundstücksanteil in absoluter Grün- und Ruhelage in GRU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fd6bb119f26fbbb85663e9e549c8192.setIcon(icon_888d5fa04d5bfd75413220ce2219fb16);
+            
+    
+            var marker_eb08e0339bb3bc9fe6d9a321bf83dbda = L.marker(
+                [47.8278178, 16.051109],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_16ecea0d7c8b5bb48df11212ad658566 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca866335aa8356a5c7592aa855dbc6b5 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_bcd444596a2910eafd930b48558acaef = $(`<div id="html_bcd444596a2910eafd930b48558acaef" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>PRIVATVERKAUF keine Maklergebühren</b><br>2724 Hohe Wand<br>€ 120 · 1005.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/privatverkauf-keine-maklergebuehren-1217247972/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_ca866335aa8356a5c7592aa855dbc6b5.setContent(html_bcd444596a2910eafd930b48558acaef);
+            
+        
+
+        marker_eb08e0339bb3bc9fe6d9a321bf83dbda.bindPopup(popup_ca866335aa8356a5c7592aa855dbc6b5)
+        ;
+
+        
+    
+    
+            marker_eb08e0339bb3bc9fe6d9a321bf83dbda.bindTooltip(
+                `<div>
+                     PRIVATVERKAUF keine Maklergebühren
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb08e0339bb3bc9fe6d9a321bf83dbda.setIcon(icon_16ecea0d7c8b5bb48df11212ad658566);
+            
+    
+            var marker_30d7c94c0dc3b5c3f2f8b7decf273aeb = L.marker(
+                [47.6628398, 16.0294486],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_d9c9f1fe11e8ef1351d076a53bece538 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cd4c5fd01438ed1e0eee0994eba7c85 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_4aa24ac3d8aa14927e1841720be78a66 = $(`<div id="html_4aa24ac3d8aa14927e1841720be78a66" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrund mit Fernblick bis zum Schneeberg - kein Bauzwang - AUFGESCHLOSSEN</b><br>2632 Penk<br>€ 90 · 1431.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/baugrund-mit-fernblick-bis-zum-schneeberg-kein-bauzwang-aufgeschlossen-1233206139/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_7cd4c5fd01438ed1e0eee0994eba7c85.setContent(html_4aa24ac3d8aa14927e1841720be78a66);
+            
+        
+
+        marker_30d7c94c0dc3b5c3f2f8b7decf273aeb.bindPopup(popup_7cd4c5fd01438ed1e0eee0994eba7c85)
+        ;
+
+        
+    
+    
+            marker_30d7c94c0dc3b5c3f2f8b7decf273aeb.bindTooltip(
+                `<div>
+                     Baugrund mit Fernblick bis zum Schneeberg - kein Bauzwang - AUFGESCHLOSSEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30d7c94c0dc3b5c3f2f8b7decf273aeb.setIcon(icon_d9c9f1fe11e8ef1351d076a53bece538);
+            
+    
+            var marker_9939618bc4ee35c444fa4a762c97f32e = L.marker(
+                [47.7039344, 16.0003098],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_ebb25539b940c7e933cf4c2741d203ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cffcb3fd5f78e8db09d490303513ce4 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_67333cb28e232c2f9c840760b10a96f2 = $(`<div id="html_67333cb28e232c2f9c840760b10a96f2" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ebenes Baugrundstück in ruhiger Lage in Ternitz, Ortsteil Pottschach, zu verkaufen!</b><br>2630 Pottschach<br>€ 107 · 1259.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ebenes-baugrundstueck-in-ruhiger-lage-in-ternitz-ortsteil-pottschach-zu-verkaufen-1644644187/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_5cffcb3fd5f78e8db09d490303513ce4.setContent(html_67333cb28e232c2f9c840760b10a96f2);
+            
+        
+
+        marker_9939618bc4ee35c444fa4a762c97f32e.bindPopup(popup_5cffcb3fd5f78e8db09d490303513ce4)
+        ;
+
+        
+    
+    
+            marker_9939618bc4ee35c444fa4a762c97f32e.bindTooltip(
+                `<div>
+                     Ebenes Baugrundstück in ruhiger Lage in Ternitz, Ortsteil Pottschach, zu verkaufen!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9939618bc4ee35c444fa4a762c97f32e.setIcon(icon_ebb25539b940c7e933cf4c2741d203ec);
+            
+    
+            var marker_4b32216de8616c8f8c569d5d1d132190 = L.marker(
+                [47.7983651, 15.9876033],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_705f54af00ec977ac20707f631ff71a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4e3907b983bb41b400dee3a74582d14 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_e27cd24381c2bcc3870c2e4ee88b66d1 = $(`<div id="html_e27cd24381c2bcc3870c2e4ee88b66d1" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Aufschließungskosten bereits bezahlt! Baugrundstück mit 1.013 m² | Ruhelage mit Ausblick</b><br>2733 Grünbach am Schneeberg<br>€ 133 · 1013.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/aufschliessungskosten-bereits-bezahlt-baugrundstueck-mit-1-013-m-ruhelage-mit-ausblick-1575866840/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_d4e3907b983bb41b400dee3a74582d14.setContent(html_e27cd24381c2bcc3870c2e4ee88b66d1);
+            
+        
+
+        marker_4b32216de8616c8f8c569d5d1d132190.bindPopup(popup_d4e3907b983bb41b400dee3a74582d14)
+        ;
+
+        
+    
+    
+            marker_4b32216de8616c8f8c569d5d1d132190.bindTooltip(
+                `<div>
+                     Aufschließungskosten bereits bezahlt! Baugrundstück mit 1.013 m² | Ruhelage mit Ausblick
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b32216de8616c8f8c569d5d1d132190.setIcon(icon_705f54af00ec977ac20707f631ff71a7);
+            
+    
+            var marker_a02128f6b5a8d33b0a7ca96013960cec = L.marker(
+                [47.6699385, 15.93959],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_e028b39e9e1eb7e111b031125ab016ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acb09e0c8c64f9dbf24999a6fb2f49f0 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7cbe1ce5685e43b68a4155e9b12bb413 = $(`<div id="html_7cbe1ce5685e43b68a4155e9b12bb413" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrund mit großem Abrissobjekt aus 1970, mit Weiterbau</b><br>2640 Gloggnitz<br>€ 136 · 1006.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/baugrund-mit-grossem-abrissobjekt-aus-1970-mit-weiterbau-2025-1448040446/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_acb09e0c8c64f9dbf24999a6fb2f49f0.setContent(html_7cbe1ce5685e43b68a4155e9b12bb413);
+            
+        
+
+        marker_a02128f6b5a8d33b0a7ca96013960cec.bindPopup(popup_acb09e0c8c64f9dbf24999a6fb2f49f0)
+        ;
+
+        
+    
+    
+            marker_a02128f6b5a8d33b0a7ca96013960cec.bindTooltip(
+                `<div>
+                     Baugrund mit großem Abrissobjekt aus 1970, mit Weiterbau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a02128f6b5a8d33b0a7ca96013960cec.setIcon(icon_e028b39e9e1eb7e111b031125ab016ec);
+            
+    
+            var marker_65c79ca8bc392b46e7ff93643e289f46 = L.marker(
+                [47.6693834, 15.952258],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_7b388489018bc157f99ac924adeb0044 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fedd0abf8d78d70ff50a69092680b566 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_bb5f3fffa11c043db4ce3fb01862949f = $(`<div id="html_bb5f3fffa11c043db4ce3fb01862949f" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrund mit Berg- &amp; Grünblick</b><br>2640 Enzenreith<br>€ 114 · 1215.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/baugrund-mit-berg-gruenblick-1951032295/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_fedd0abf8d78d70ff50a69092680b566.setContent(html_bb5f3fffa11c043db4ce3fb01862949f);
+            
+        
+
+        marker_65c79ca8bc392b46e7ff93643e289f46.bindPopup(popup_fedd0abf8d78d70ff50a69092680b566)
+        ;
+
+        
+    
+    
+            marker_65c79ca8bc392b46e7ff93643e289f46.bindTooltip(
+                `<div>
+                     Baugrund mit Berg- & Grünblick
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65c79ca8bc392b46e7ff93643e289f46.setIcon(icon_7b388489018bc157f99ac924adeb0044);
+            
+    
+            var marker_0c9cc3929a48c72004466521216d9d60 = L.marker(
+                [48.1187717, 16.2561459],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_8392f4bab560bc3612af09a45b00c1af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a235499b372c8a9534e94ae5873058a2 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_27798f9f638fcbaaedab8171b0bbbedf = $(`<div id="html_27798f9f638fcbaaedab8171b0bbbedf" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Einmalige Gelegenheit in Perchtoldsdorf: Baurechtsgrundstück I Ideal für 2 befreundete Familien bzw. ein Einfamilienhaus oder 2 Doppelhaushälften</b><br>2380 Perchtoldsdorf<br>€ 150 · 1000.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/moedling/einmalige-gelegenheit-in-perchtoldsdorf-baurechtsgrundstueck-i-ideal-fuer-2-befreundete-familien-bzw-ein-einfamilienhaus-oder-2-doppelhaushaelften-1269413156/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_a235499b372c8a9534e94ae5873058a2.setContent(html_27798f9f638fcbaaedab8171b0bbbedf);
+            
+        
+
+        marker_0c9cc3929a48c72004466521216d9d60.bindPopup(popup_a235499b372c8a9534e94ae5873058a2)
+        ;
+
+        
+    
+    
+            marker_0c9cc3929a48c72004466521216d9d60.bindTooltip(
+                `<div>
+                     Einmalige Gelegenheit in Perchtoldsdorf: Baurechtsgrundstück I Ideal für 2 befreundete Familien bzw. ein Einfamilienhaus oder 2 Doppelhaushälften
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c9cc3929a48c72004466521216d9d60.setIcon(icon_8392f4bab560bc3612af09a45b00c1af);
+            
+    
+            var marker_a465fe095505d93dc73c44694d22055f = L.marker(
+                [47.6419448, 15.8227876],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_80f6fba0158ab88c13569be7722c013e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1031ff84941b42d9666acd10ac7249de = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_b2d7a8ac6d3da6a713cc5be8eb557293 = $(`<div id="html_b2d7a8ac6d3da6a713cc5be8eb557293" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ihr eigenes Grundstück am Semmering</b><br>2680 Semmering-Kurort<br>€ 122 · 1272.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ihr-eigenes-grundstueck-am-semmering-1665958927/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_1031ff84941b42d9666acd10ac7249de.setContent(html_b2d7a8ac6d3da6a713cc5be8eb557293);
+            
+        
+
+        marker_a465fe095505d93dc73c44694d22055f.bindPopup(popup_1031ff84941b42d9666acd10ac7249de)
+        ;
+
+        
+    
+    
+            marker_a465fe095505d93dc73c44694d22055f.bindTooltip(
+                `<div>
+                     Ihr eigenes Grundstück am Semmering
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a465fe095505d93dc73c44694d22055f.setIcon(icon_80f6fba0158ab88c13569be7722c013e);
+            
+    
+            var marker_1ee628e69161cd1c005d5097f6a90fc1 = L.marker(
+                [47.6238273, 16.118686],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_0fdfdcefbe28c2dfb468b8bea5d4a005 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56a0f9302076b7e3eba72f97dc0fe35f = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_bf47168e3674683bfb90bd7baac0dd98 = $(`<div id="html_bf47168e3674683bfb90bd7baac0dd98" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>1.505 m² Bauland mit Fernblick und Freizeithaus in Hochegg</b><br>2840 Grimmenstein<br>€ 105 · 1505.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/1-505-m-bauland-mit-fernblick-und-freizeithaus-in-hochegg-1100564132/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_56a0f9302076b7e3eba72f97dc0fe35f.setContent(html_bf47168e3674683bfb90bd7baac0dd98);
+            
+        
+
+        marker_1ee628e69161cd1c005d5097f6a90fc1.bindPopup(popup_56a0f9302076b7e3eba72f97dc0fe35f)
+        ;
+
+        
+    
+    
+            marker_1ee628e69161cd1c005d5097f6a90fc1.bindTooltip(
+                `<div>
+                     1.505 m² Bauland mit Fernblick und Freizeithaus in Hochegg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ee628e69161cd1c005d5097f6a90fc1.setIcon(icon_0fdfdcefbe28c2dfb468b8bea5d4a005);
+            
+    
+            var marker_0115599b9dd70f02e037ac9619e8cb24 = L.marker(
+                [47.5156539, 16.1890939],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_516cdf668bf4f7df0b1ce3311feb7e68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c602080c09ec67140279d0b74bfb28ff = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_e324c667c146076c4e98eefcf7117739 = $(`<div id="html_e324c667c146076c4e98eefcf7117739" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrundstück für Einfamilienhaus</b><br>2851 Krumbach<br>€ 92 · 1910.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/baugrundstueck-fuer-einfamilienhaus-1962307338/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_c602080c09ec67140279d0b74bfb28ff.setContent(html_e324c667c146076c4e98eefcf7117739);
+            
+        
+
+        marker_0115599b9dd70f02e037ac9619e8cb24.bindPopup(popup_c602080c09ec67140279d0b74bfb28ff)
+        ;
+
+        
+    
+    
+            marker_0115599b9dd70f02e037ac9619e8cb24.bindTooltip(
+                `<div>
+                     Baugrundstück für Einfamilienhaus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0115599b9dd70f02e037ac9619e8cb24.setIcon(icon_516cdf668bf4f7df0b1ce3311feb7e68);
+            
+    
+            var marker_062efd56c138a9e94f33d31494e8605e = L.marker(
+                [47.716094, 16.1865513],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_226f2e9d969e4d9a09b967ccd8bf5694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_775c2b5b89f09f434a2acf795cc2c446 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_5b12950753502f9a223655a530831b9d = $(`<div id="html_5b12950753502f9a223655a530831b9d" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Platz für Haus, Pool und Garage ! Baugrundstück mit über 2.200m²</b><br>2823 Pitten<br>€ 81 · 2200.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/platz-fuer-haus-pool-und-garage-baugrundstueck-mit-ueber-2-200m-1424880484/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_775c2b5b89f09f434a2acf795cc2c446.setContent(html_5b12950753502f9a223655a530831b9d);
+            
+        
+
+        marker_062efd56c138a9e94f33d31494e8605e.bindPopup(popup_775c2b5b89f09f434a2acf795cc2c446)
+        ;
+
+        
+    
+    
+            marker_062efd56c138a9e94f33d31494e8605e.bindTooltip(
+                `<div>
+                     Platz für Haus, Pool und Garage ! Baugrundstück mit über 2.200m²
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_062efd56c138a9e94f33d31494e8605e.setIcon(icon_226f2e9d969e4d9a09b967ccd8bf5694);
+            
+    
+            var marker_63cafd56c298c26bb8a3f7ae8b997ab4 = L.marker(
+                [47.8278178, 16.051109],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_8bbe7ab0c1d0752da74b288e94a4482f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6e1bdf2923d3c40aea7890da901de18 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_ae9c13f06b2f14e15fdab02e766f55ce = $(`<div id="html_ae9c13f06b2f14e15fdab02e766f55ce" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Hohe Wand-Blick: Baugrund mit Plan für 1- oder 2-Familienhaus</b><br>2724 Maiersdorf<br>€ 114 · 1572.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/hohe-wand-blick-baugrund-mit-plan-fuer-1-oder-2-familienhaus-1595719139/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_d6e1bdf2923d3c40aea7890da901de18.setContent(html_ae9c13f06b2f14e15fdab02e766f55ce);
+            
+        
+
+        marker_63cafd56c298c26bb8a3f7ae8b997ab4.bindPopup(popup_d6e1bdf2923d3c40aea7890da901de18)
+        ;
+
+        
+    
+    
+            marker_63cafd56c298c26bb8a3f7ae8b997ab4.bindTooltip(
+                `<div>
+                     Hohe Wand-Blick: Baugrund mit Plan für 1- oder 2-Familienhaus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63cafd56c298c26bb8a3f7ae8b997ab4.setIcon(icon_8bbe7ab0c1d0752da74b288e94a4482f);
+            
+    
+            var marker_c884b05350220d2236d07056a25ba4c6 = L.marker(
+                [47.6699385, 15.93959],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_ad7f424f14f7ab3e42af66f3d2d9b5e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be91a1e14f4900da01f5e7b6074f18fa = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_23faac2993cac8cd4297d5e6b4604026 = $(`<div id="html_23faac2993cac8cd4297d5e6b4604026" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Ihr neues Bauprojekt wartet auf Sie - Traumgrundstück im Bauland-Wohngebiet!</b><br>2640 Gloggnitz<br>€ 114 · 1717.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/ihr-neues-bauprojekt-wartet-auf-sie-traumgrundstueck-im-bauland-wohngebiet-1604141552/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_be91a1e14f4900da01f5e7b6074f18fa.setContent(html_23faac2993cac8cd4297d5e6b4604026);
+            
+        
+
+        marker_c884b05350220d2236d07056a25ba4c6.bindPopup(popup_be91a1e14f4900da01f5e7b6074f18fa)
+        ;
+
+        
+    
+    
+            marker_c884b05350220d2236d07056a25ba4c6.bindTooltip(
+                `<div>
+                     Ihr neues Bauprojekt wartet auf Sie - Traumgrundstück im Bauland-Wohngebiet!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c884b05350220d2236d07056a25ba4c6.setIcon(icon_ad7f424f14f7ab3e42af66f3d2d9b5e7);
+            
+    
+            var marker_2cc3853ae0c01f9248844684192c5c9e = L.marker(
+                [47.7835311, 16.0929045],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_ad6acc9d3809743f83da6a729010fa6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a1c8487bd5ce50f24b69bc23896be33 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_34b7e989304dcaacce62f6cef7b401df = $(`<div id="html_34b7e989304dcaacce62f6cef7b401df" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Einzigartiges Baugrundstück mit Holzhütte - Blau</b><br>2731 Urschendorf<br>€ 185 · 1137.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/einzigartiges-baugrundstueck-mit-holzhuette-blau-1332850067/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_6a1c8487bd5ce50f24b69bc23896be33.setContent(html_34b7e989304dcaacce62f6cef7b401df);
+            
+        
+
+        marker_2cc3853ae0c01f9248844684192c5c9e.bindPopup(popup_6a1c8487bd5ce50f24b69bc23896be33)
+        ;
+
+        
+    
+    
+            marker_2cc3853ae0c01f9248844684192c5c9e.bindTooltip(
+                `<div>
+                     Einzigartiges Baugrundstück mit Holzhütte - Blau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2cc3853ae0c01f9248844684192c5c9e.setIcon(icon_ad6acc9d3809743f83da6a729010fa6f);
+            
+    
+            var marker_993241f3fbd457a8a2c972cc1bf4f42d = L.marker(
+                [47.7223847, 16.2332978],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_c3c692b576fdf73a2a8d0e5668ff71e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11cf48244636a6bc0800a0a89e0004d1 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_f9837784617b41f0556406b2e13c61ad = $(`<div id="html_f9837784617b41f0556406b2e13c61ad" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Baugrundstück mit traumhaften Fernblick in ruhiger Lage</b><br>2822 Walpersbach<br>€ 201 · 1072.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/baugrundstueck-mit-traumhaften-fernblick-in-ruhiger-lage-1980945942/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_11cf48244636a6bc0800a0a89e0004d1.setContent(html_f9837784617b41f0556406b2e13c61ad);
+            
+        
+
+        marker_993241f3fbd457a8a2c972cc1bf4f42d.bindPopup(popup_11cf48244636a6bc0800a0a89e0004d1)
+        ;
+
+        
+    
+    
+            marker_993241f3fbd457a8a2c972cc1bf4f42d.bindTooltip(
+                `<div>
+                     Baugrundstück mit traumhaften Fernblick in ruhiger Lage
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_993241f3fbd457a8a2c972cc1bf4f42d.setIcon(icon_c3c692b576fdf73a2a8d0e5668ff71e8);
+            
+    
+            var marker_625fb2ac4cf82b6abb47a563315868c9 = L.marker(
+                [47.7983651, 15.9876033],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_312a209062823e1b8f70b9710d474c32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77eef241fad8f3a7c04ca65b7a219c51 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_7331aab671353177e8fc2cca9bc3bbc4 = $(`<div id="html_7331aab671353177e8fc2cca9bc3bbc4" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Großer Baugrund in Grünbach am Schneeberg</b><br>2733 Grünbach am Schneeberg<br>€ 140 · 1602.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/grosser-baugrund-in-gruenbach-am-schneeberg-1816791744/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_77eef241fad8f3a7c04ca65b7a219c51.setContent(html_7331aab671353177e8fc2cca9bc3bbc4);
+            
+        
+
+        marker_625fb2ac4cf82b6abb47a563315868c9.bindPopup(popup_77eef241fad8f3a7c04ca65b7a219c51)
+        ;
+
+        
+    
+    
+            marker_625fb2ac4cf82b6abb47a563315868c9.bindTooltip(
+                `<div>
+                     Großer Baugrund in Grünbach am Schneeberg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_625fb2ac4cf82b6abb47a563315868c9.setIcon(icon_312a209062823e1b8f70b9710d474c32);
+            
+    
+            var marker_f4ed8f8fb104d4cdecfc18c88e2035f0 = L.marker(
+                [47.7189225, 16.0754093],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_fafe8b2cce9c11d0c4b6a0b08a0b2932 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cab8abe92e9d71d125550bfb3cce295 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_d466186a5f607a96daa6301455c86159 = $(`<div id="html_d466186a5f607a96daa6301455c86159" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>Grundstück in Neunkirchen - Bauland Industriegebiet</b><br>2620 Neunkirchen<br>€ 113 · 2123.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/neunkirchen/grundstueck-in-neunkirchen-bauland-industriegebiet-1944248063/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_7cab8abe92e9d71d125550bfb3cce295.setContent(html_d466186a5f607a96daa6301455c86159);
+            
+        
+
+        marker_f4ed8f8fb104d4cdecfc18c88e2035f0.bindPopup(popup_7cab8abe92e9d71d125550bfb3cce295)
+        ;
+
+        
+    
+    
+            marker_f4ed8f8fb104d4cdecfc18c88e2035f0.bindTooltip(
+                `<div>
+                     Grundstück in Neunkirchen - Bauland Industriegebiet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4ed8f8fb104d4cdecfc18c88e2035f0.setIcon(icon_fafe8b2cce9c11d0c4b6a0b08a0b2932);
+            
+    
+            var marker_0601338f26faadbcd2accb5a09a4bea1 = L.marker(
+                [47.8306037, 16.0694548],
+                {
+}
+            ).addTo(marker_cluster_fde6fb9ecb1a6b127449e784def06f76);
+        
+    
+            var icon_76d7c519d1fbe5312c1169d79e612821 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5908dc4f7b5203333cc04b107728fd9 = L.popup({
+  "maxWidth": 340,
+});
+
+        
+            
+                var html_76109d72421af931b796eab563d18d57 = $(`<div id="html_76109d72421af931b796eab563d18d57" style="width: 100.0%; height: 100.0%;"><div style="width:300px"><b>[06836] Großzügiges Grundstück in traumhafter Lage - Hohe Wand Blick</b><br>2724 Stollhof<br>€ 192 · 1304.0 m²<br><a href="https://www.willhaben.at/iad/immobilien/d/grundstuecke/niederoesterreich/wiener-neustadt-land/-06836-grosszuegiges-grundstueck-in-traumhafter-lage-hohe-wand-blick-1190554494/" target="_blank" rel="noopener">Open advertisement</a></div></div>`)[0];
+                popup_f5908dc4f7b5203333cc04b107728fd9.setContent(html_76109d72421af931b796eab563d18d57);
+            
+        
+
+        marker_0601338f26faadbcd2accb5a09a4bea1.bindPopup(popup_f5908dc4f7b5203333cc04b107728fd9)
+        ;
+
+        
+    
+    
+            marker_0601338f26faadbcd2accb5a09a4bea1.bindTooltip(
+                `<div>
+                     [06836] Großzügiges Grundstück in traumhafter Lage - Hohe Wand Blick
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0601338f26faadbcd2accb5a09a4bea1.setIcon(icon_76d7c519d1fbe5312c1169d79e612821);
+            
+    
+            marker_cluster_fde6fb9ecb1a6b127449e784def06f76.addTo(map_8d6604b2fcf938c1d61d92a942daa891);
+        
+    
+            var layer_control_77a4c6f339d04900d71cea78f24858d4_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_33584d6b6876dbeba2415374c2b61ee2,
+                },
+                overlays :  {
+                    "Properties" : marker_cluster_fde6fb9ecb1a6b127449e784def06f76,
+                },
+            };
+            let layer_control_77a4c6f339d04900d71cea78f24858d4 = L.control.layers(
+                layer_control_77a4c6f339d04900d71cea78f24858d4_layers.base_layers,
+                layer_control_77a4c6f339d04900d71cea78f24858d4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8d6604b2fcf938c1d61d92a942daa891);
+
+        
+    
+            map_8d6604b2fcf938c1d61d92a942daa891.fitBounds(
+                [[47.8013645, 16.2227075], [47.7849541, 16.0404663], [48.3264212, 16.7062042], [47.5521095, 16.0916025], [47.5133791, 16.2819499], [47.5870539, 16.008036], [47.5517562, 16.0307929], [47.5828951, 16.1521403], [47.6419448, 15.8227876], [47.7710398, 16.0394426], [47.6539399, 15.7888896], [48.2666393, 15.8691231], [47.8278178, 16.051109], [47.6628398, 16.0294486], [47.7039344, 16.0003098], [47.7983651, 15.9876033], [47.6699385, 15.93959], [47.6693834, 15.952258], [48.1187717, 16.2561459], [47.6419448, 15.8227876], [47.6238273, 16.118686], [47.5156539, 16.1890939], [47.716094, 16.1865513], [47.8278178, 16.051109], [47.6699385, 15.93959], [47.7835311, 16.0929045], [47.7223847, 16.2332978], [47.7983651, 15.9876033], [47.7189225, 16.0754093], [47.8306037, 16.0694548]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
